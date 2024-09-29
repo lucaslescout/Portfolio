@@ -1,0 +1,293 @@
+body {
+  background: linear-gradient(to bottom, #74b4f8, #ffffff); /* Dégradé */
+}
+
+/* Style du header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: #ffffff;
+  border-bottom: 5px solid #36a9c9;
+}
+
+#p_presentation {
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border: 2px solid #36a9c9; /* Bordure autour du paragraphe */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 15px; /* Espacement intérieur */
+  margin: 20px 0; /* Marge supérieure et inférieure */
+  font-size: 1.1em; /* Taille de police légèrement augmentée */
+  line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+  transition: background-color 0.3s; /* Transition douce pour le survol */
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Style du titre */
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 1.5em;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+/* Style de la barre de navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Style des éléments du menu */
+nav ul li {
+  display: inline;
+}
+
+/* Style des liens du menu */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #36a9c9;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+  background-color: #29839c;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Partie CSS pour l'affichage des différents projets */
+#projets {
+  text-align: center; /* Centre le texte */
+}
+
+.projects {
+  display: flex;
+  flex-direction: column; /* Affiche les projets verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  margin-top: 20px; /* Marge au-dessus des projets */
+}
+
+.project {
+  background-color: #ffffff; /* Couleur de fond blanche */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  margin: 15px 0; /* Espacement entre les projets */
+  width: 80%; /* Largeur des projets */
+  border: 2px solid #36a9c9; /* Bordure colorée */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transition pour l'effet d'ombre */
+}
+
+/* Styles pour les titres */
+.project h3 {
+  font-family: "Montserrat", sans-serif; /* Police pour les titres */
+  font-size: 1.8em; /* Taille de police pour le titre */
+  color: #333; /* Couleur du titre */
+  margin: 0 0 10px; /* Marge inférieure */
+}
+
+/* Styles pour les descriptions */
+.project p {
+  font-family: "Roboto", sans-serif; /* Police pour les descriptions */
+  font-size: 0.9em; /* Taille de police plus petite */
+  color: #555; /* Couleur du texte */
+  line-height: 1.5; /* Hauteur de ligne pour lisibilité */
+}
+
+/* Effets au survol */
+.project:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+  transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+.hidden {
+  display: none;
+}
+
+#form-message {
+  margin-top: 10px;
+  color: green;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none; /* Enlève le soulignement des liens */
+  color: black;
+}
+
+#skills {
+  text-align: center;
+}
+#skills ul {
+  list-style: none; /* Enlève les points de la liste */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Les éléments s'affichent en ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 20px; /* Espace entre les éléments */
+}
+#skills li {
+  display: inline-block;
+}
+#skills img {
+  width: 50px; /* Ajustez la taille des images */
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+#logo_github {
+  transition: transform 0.3s ease; /* Transition douce pour l'effet */
+}
+
+#logo_github:hover {
+  transform: scale(1.2); /* Agrandit l'image à 120% au survol */
+}
+
+#contact {
+  text-align: right; /* Aligne le texte à droite */
+  margin-right: 20px; /* Ajoute une marge à droite si nécessaire */
+}
+
+#contact h3 {
+  margin-bottom: 10px; /* Espace entre le titre et le texte */
+}
+
+#contact p {
+  margin: 0; /* Supprime les marges par défaut pour un meilleur alignement */
+}
+
+#titre_projet {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif; /* Police pour les titres */
+  color: #333; /* Couleur du titre */
+}
+
+#images_projet {
+  display: block; /* Transforme l'image en élément de bloc */
+  margin-left: auto; /* Marge automatique à gauche */
+  margin-right: auto; /* Marge automatique à droite */
+  width: 70%;
+}
+
+/* Liste dans projet SMART CITY */
+#projet_section ul {
+  list-style: none; /* Supprime les points de la liste */
+  padding: 0; /* Supprime le padding par défaut */
+}
+
+#projet_section li {
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border: 2px solid #36a9c9; /* Bordure autour de chaque élément */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 10px; /* Espacement intérieur */
+  margin: 10px 0; /* Marge entre les éléments */
+}
+
+#projet_section h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif; /* Police pour les titres */
+  color: #333; /* Couleur du titre */
+}
+
+#projet_section p {
+  background-color: #f9f9f9; /* Couleur de fond légère */
+  border: 2px solid #36a9c9; /* Bordure autour du paragraphe */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 15px; /* Espacement intérieur */
+  margin: 20px 0; /* Marge supérieure et inférieure */
+  font-size: 1.1em; /* Taille de police légèrement augmentée */
+  line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+  transition: background-color 0.3s; /* Transition douce pour le survol */
+}
+
+#logo_acces_site {
+  transition: transform 0.3s ease; /* Transition douce pour l'effet */
+  display: block; /* Transforme l'image en élément de bloc */
+  margin-left: auto; /* Marge automatique à gauche */
+  margin-right: auto; /* Marge automatique à droite */
+}
+
+#logo_acces_site:hover {
+  transform: scale(1.2); /* Agrandit l'image à 120% au survol */
+}
+
+/* Style pour le bouton hamburger */
+.menu-toggle {
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: none; /* Cacher le bouton hamburger par défaut */
+  top: 20px;
+  right: 20px;
+}
+
+/* Afficher le bouton hamburger sur petits écrans */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Affiche le bouton hamburger */
+  }
+
+  nav ul {
+    display: none; /* Cache le menu par défaut sur petits écrans */
+    flex-direction: column; /* Menu en colonne */
+    top: 60px; /* Ajuster selon la hauteur de ton header */
+    left: 0;
+    width: 100%;
+    background-color: #282c34; /* Fond du menu en responsive */
+    z-index: 10; /* Pour que le menu soit au-dessus des autres éléments */
+    padding: 10px 0; /* Ajoute un peu de padding */
+  }
+
+  nav ul.active {
+    display: flex; /* Affiche le menu lorsqu'il est actif */
+  }
+
+  nav ul li {
+    display: block; /* Les éléments s'affichent en colonne */
+    text-align: center; /* Centre les liens */
+    margin: 10px 0; /* Espacement entre les éléments du menu */
+  }
+}
