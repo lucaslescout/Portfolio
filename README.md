@@ -1,3 +1,3 @@
 # Portfolio
 
-Site web de mon portfolio LESCOUT Lucas
+Site web de mon portfolio
